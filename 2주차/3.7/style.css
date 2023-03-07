@@ -1,0 +1,64 @@
+* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
+box-sizing: border-box;
+font-size: 12px;}
+.wrap{
+    width: 350px;
+    margin: auto;
+}
+.login {
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+    padding: 19px 16px;
+}
+
+.btn-login{
+    display: block;
+    background: #711BFF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    padding: 13px ;
+    
+}
+
+.btn-login img{
+    height: 1.4em;
+    margin-bottom: -3px;
+    margin-right: 7px;
+}
+
+.login-link {
+    margin-top: 17px;
+}
+.login-link a{
+    text-decoration: none;
+    color: #767676;
+}
+
+.find-id {
+    background: url(icon-lock.png);
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding-left: 1.2em;
+}
+
+.btn-join {
+    float: right;
+    background: url(icon-user.png); 
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding-left: 1.2em;
+}
+
+.find-id + span {
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #767676;
+    vertical-align: middle;
+    margin: 0 4px;
+  }
