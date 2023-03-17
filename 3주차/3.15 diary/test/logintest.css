@@ -11,6 +11,10 @@
     padding: 0;
 }
 
+body {
+    background-color:  #fffaf0;
+}
+
 a {
     text-decoration: none;
 }
@@ -35,10 +39,20 @@ header {
 }
 
 .btn-join {
-    
+    display: inline-block; /* 인라인블록 한 이유는 줄바꿈안일어나게하려고 */
+    font-size: 14px;
+    text-decoration: none;
+    color:#5a6a72;
+    background: url("/img/icon-join.svg") no-repeat 0.8em center / 2em ;  
+    padding: 1em 1em 1em 2.8em;  
 }
 
-
+/* main ----------------------------------------------------------*/
+/* 로고이미지랑 타이틀 */
+main {
+    width: 392px;
+    margin: 71px auto 52px;;
+}
 
 .img-title {
     text-align: center;
@@ -54,4 +68,75 @@ header {
   .line {
     box-shadow: inset 0 -0.6em rgba(255, 79, 110, 0.2);
     border-bottom: 2px solid #ff4f6e;
+  }
+
+/* form */
+
+.form-wrap {
+    margin-top: 40px;
+}
+
+.label-style, .input-style{
+    display: block; /*줄바꿈*/
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.label-style {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #29363d;
+}
+
+.input-style {
+    height: 48px;
+    font-size: 16px;
+    transition: box-shadow 0.2s;
+    border: none;
+    background: #FFFFFF;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #677880;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.input-style:hover {
+    box-shadow: 0 2px 0 0 #2e6ff2;
+}
+.input-style:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #2e6ff2;
+    border-radius: 4px;
+}
+
+
+/* button */
+
+.btn {
+    width: 100%;
+    background: #29363D;
+    border-radius: 4px;
+    display: block;
+    height: 48px;
+    border: 0;
+    /* padding: 0; */
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.black-btn:not(:disabled) {
+    cursor: pointer;
+}
+
+
+.black-btn:disabled {
+    opacity: 0.2;
+}
+
+/*footer*/
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+    color: #677880;
   }

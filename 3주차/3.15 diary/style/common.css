@@ -40,12 +40,14 @@ body {
     height: 75px;
   }
 
-  
-  header .btn-join {
-    /* float 사용시 블록요소가 된다 */
+  /* float 사용시 블록요소가 된다  */
+  /* header .btn-join { 
     float: right;
-  }
+  } */
 
+
+
+  /*회원가입 페이지*/
   .hello {
     display: inline-block;
   }
@@ -83,10 +85,9 @@ body {
   [class^="btn-"] {
     /* display: block; 나중에 유지보수하기위해 넣어놓음 */
     display: inline-block; /* 인라인블록 한 이유는 줄바꿈안일어나게하려고 */
-    padding: 1em 1em 1em 2.8em;
+    padding: 1em 1em 1em 2.8em; 
     text-decoration: none;
     color: #5a6a72;
-    
   }
 
   .btn-join{
