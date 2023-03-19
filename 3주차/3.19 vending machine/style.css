@@ -1,0 +1,361 @@
+body {
+    background: #EAE8FE;
+}
+p  {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333333;
+} 
+button:hover {
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.logo {
+    width: 386px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 67px;
+}
+
+/* container */
+div.container {
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+}
+
+
+
+/* 콜라 select_zone ------------- */
+section.select_zone {
+    width: 366px;
+    background: #FFFFFF;
+    padding: 28px 27px;
+    box-sizing: border-box;
+}
+
+/*ul*/
+.cola-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.cola-items li {
+    width: 94px;
+    height: 130px;
+    text-align: center;
+    font-size: 9px;
+}
+
+.cola-items li:nth-child(1), 
+.cola-items li:nth-child(5)
+{
+    border: 3px solid #6327FE;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.cola-items li:nth-child(3), .cola-items li:nth-child(4), .cola-items li:nth-child(6)
+{
+    box-shadow: 0 0 3px #726a6a;
+    border-radius: 10px;
+}
+
+.cola-items li p {
+    margin-top: 6px;
+    margin-bottom: 7px;
+}
+.cola-items li:nth-child(2) {
+    position: relative;
+} 
+
+.cola-items li:nth-child(2)::after {
+    content: "";
+    display: block;
+    background: no-repeat center 37px/ 70px 65px url(/img/품절.svg) rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 0 0 3px #726a6a;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.cola-items img {
+    margin-top: 11px;
+}
+
+.cola-items button {
+    background: #6327FE;
+    font-size: 12px;
+    border-radius: 50px;
+    width: 70px;
+    height: 22px;
+    color: white;
+    border: none;
+}
+
+/* -------------------------------------- */
+
+.money_zone {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 20px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 33px 33px 106px;
+    /* background: #6327FE; */
+}
+
+.money_zone button{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 13px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: #6327FE;
+    box-shadow: 0 0 3px #726a6a;
+}
+
+
+.money_zone button:not(:last-child) {
+    color: #000000;
+    background: white;
+}
+
+.rest {
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    background: #EAE8FE;
+    line-height: 33px;
+    border-radius: 5px;
+}
+
+.rest span {
+    float: right;
+    margin-right: 10px;
+}
+
+.money_zone input {
+    border-radius: 5px;
+    border: 1px solid #BDBDBD;
+    padding-left: 6px;
+    font-size: 13px;
+}
+
+.money_zone ul {
+    background: #EAE8FE;
+    border-radius: 5px;
+    border: 1px solid #BDBDBD;
+    padding: 12px 18px 12px 12px;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+}
+ul::-webkit-scrollbar {
+    width: 12px;  /* 스크롤바의 너비 */
+
+}
+ul::-webkit-scrollbar-thumb {
+    height: 80%; /* 스크롤바의 길이 */
+    background-color: white; /* 스크롤바의 색상 */
+    background-clip: padding-box;
+    border: 4px solid transparent;
+    border-radius: 10px;
+}
+
+.money_zone ul li {
+    background: white;
+    border-radius: 5px;
+    font-size: 9px;
+    height: 46px;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 8px;
+    box-sizing: border-box;
+
+}
+
+.money_zone ul li::after {
+    content: "1";
+    box-sizing: border-box;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    line-height: 27px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+}
+.money_zone ul li:last-child::after{
+    content: "2";
+}
+
+.money_zone p {
+    width: 73px;
+    margin-right: 20px;
+}
+.money_zone img {
+    height: 33px;
+    margin-right: 10px;
+}
+.money_zone ul li:first-child{
+    margin-bottom: 6px;
+}
+
+/*오른쪽구역-------------------------*/
+section.right_zone {
+    width: 366px;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    margin-left: 28px;
+}
+
+.my-money {
+    background: #FFFFFF;
+    width: 100%;
+    padding: 9px 27px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.my-money div {
+    background: #EAE8FE;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.my-money span {
+    float: right;
+    margin-right: 10px;
+}
+
+div.total {
+    background: #FFFFFF;
+    width: 100%;
+    height: 490px;
+    padding: 25px 27px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    box-sizing: border-box;
+    
+}
+
+.total p:first-child {
+    margin-bottom: 13px;
+}
+
+.total ul {
+    background: #EAE8FE;
+    border-radius: 5px;
+    border: 1px solid #BDBDBD;
+    padding: 12px 18px 12px 12px;
+    margin-bottom: 6px;
+    width: 100%;
+    height: 380px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+}
+
+.total ul li {
+    background: white;
+    border-radius: 5px;
+    font-size: 9px;
+    font-weight: 400;
+    height: 46px;
+    width: 276px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 8px;
+    box-sizing: border-box;
+
+}
+
+.total li p {
+    margin-left: 10px;
+    width: 73px;
+    margin-right: 127px;
+}
+
+.total ul li::after {
+    content: "1";
+    box-sizing: border-box;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    line-height: 27px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+}
+.total ul li:last-child::after{
+    content: "5";
+}
+.total ul li:nth-child(2)::after{
+    content: "2"
+}
+
+.total img {
+    height: 33px;
+    /* margin-right: 10px; */
+}
+
+.total span.price {
+    font-size: 12px ;
+    color: #000000;
+    font-weight: 500;
+    text-align: right;
+    display: block;
+    line-height: 17px;
+}
+
+
+@media (max-width: 776px) {
+    body{
+        background: white;
+    }
+
+    .logo {
+        margin-bottom: 0px;
+        height: 78px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.select_zone {
+        padding: 28px 27px 20px 27px;
+    }
+
+    .my-money {
+        padding: 0px 27px;
+
+    }
+
+    section.right_zone
+    {
+        margin-left: 0px;
+    }
+}
