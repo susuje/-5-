@@ -1,0 +1,248 @@
+/* 폰트 안먹힘 수정하자 */
+:root {
+    font-family: 'Montserrat', sans-serif;
+	/*
+	font-weight: 500;
+	font-weight: 700;
+	*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, h1, p, h2, h3 {
+    margin: initial;
+}
+
+ul, li {
+    padding: initial;
+    margin: initial;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+    /* 이거 해야됨 디폴트값!*/
+}
+
+
+.section {
+    padding: 100px 50px;
+}
+
+.l-wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    box-shadow: inset 0 0 10px red;
+}
+
+.section_purple {
+    background-color: #673399;
+    color: white;
+}
+
+.section_pink {
+    background-color: seashell;
+    color: salmon;
+}
+
+
+.section-header {
+    box-shadow: inset 0 0 10px cyan;
+    margin-bottom: 100px;
+}
+
+.section-contents {
+    box-shadow: inset 0 0 10px deeppink;
+}
+
+.title {
+    box-shadow: inset 0 0 10px yellow;
+    display: flex;
+    /* align-items: center; */
+    position: relative;
+}
+
+.title-headings {
+    box-shadow: inset 0 0 10px darkorange;
+    flex-basis: 26%; 
+    /* basis값 맨처음에 안먹힘. 이유는..flex-shrink : 0 해줘야함. 늘어나지뫗!
+     이유? flex-item 들에겐 초기값 (디폴트값)flex-shrink:1이 이미 들어가있어서, p가 길면 h1의 자리를차지함 */
+    flex-shrink: 0;
+    font-size: 40px;
+}
+
+.title-headings strong {
+    box-shadow: inset 0 -20px 0 orangered;
+    font-weight: 500;
+}
+
+.title p  {
+    max-width: 450px;
+    box-shadow: inset 0 0 10px greenyellow;
+    line-height: 22px;
+	font-size: 14px;
+	color: #bd8fe8;
+    margin-left: 85px;
+}
+
+.title p::before {
+        content: "";
+        width: 60px;
+        border-top: 2px solid #bd8fe8;
+        display:block ;
+        position: absolute;
+        top: 50%;
+        left: 280.8px;
+}
+
+/* 제발 레이아웃 부터 짜자... */
+.card {
+    margin-bottom: 24px;
+    color: #222;
+    background-color: white;
+    display: flex;
+    min-height: 175px; 
+    /* 상황파악 하려고  */
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.card-cover {
+    box-shadow: inset 0 0 10px darkorange;
+    flex-basis: 26%;
+    flex-shrink: 0; 
+    /* 26%가 항상 유지된당. */
+    position: relative;
+}
+
+.card-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-cover h2 {
+    position: absolute;
+    /* 나중에작성된 마크업이 position static 값이 아니면 앞으러ㅗ 튀어나옴 */
+    background-color: rgba(119, 34, 188, 0.4) ;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    height: 100%;
+    font-weight: 500;
+}
+
+.card-contents {
+    box-shadow: inset 0 0 10px dodgerblue;
+    flex-basis: 0;  
+    /* basis:auto 여도됨. 온전히 grow:1 을 유지하려고 (나머지남은공간74%을 다쓴다) */
+    flex-grow: 1;
+    min-width: 0;
+    /* contents가 너무큰게크면 곤란하니까 자식이 커도 레이아웃이 유지되도록 min-width를 0으로 지정하자. */
+    padding: 24px;
+}
+
+.card-contents h3 {
+    font-size: 18px;
+    color: #673399;
+    margin-bottom: 32px;
+}
+
+.lists {
+    box-shadow: inset 0 0 20px darkorange;
+}
+
+.lists li {
+    text-indent: -20px;
+    padding-left: 20px;
+    color: #393636;
+    font-size: 14px;
+}
+
+.lists li + li {
+    margin-top: 15px;
+}
+
+.lists li::before {
+    display: inline-block;
+    content: ' ';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #bd8fe8;
+
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        flex-direction: column;
+        
+    }
+    .title-headings {
+        width: 400px;
+    }
+
+    .section-header {
+        margin-bottom: 50px;
+    }
+
+    .title p {
+        margin-left: 0;
+        max-width: 400px;
+        margin-top: 70px;
+    }
+
+    .title p::before {
+        content: "";
+        width: 60px;
+        border-top: 2px solid #bd8fe8;
+        display:block ;
+        position: absolute;
+        top: 55%;
+        left: 0;
+}
+    .card {
+        flex-direction: column;
+        overflow: hidden;
+        border-radius: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 769px) {
+
+    .title {
+        align-items: center;
+        
+    }
+
+    .card:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    
+}
