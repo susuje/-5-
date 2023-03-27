@@ -1,0 +1,38 @@
+@mixin one {
+    width: 100px;
+    height: 100px;
+    color: white;
+    @content;
+}
+
+.test1 {
+    @include one;
+}
+
+.test2 {
+    @include one {
+        background-color: red;
+    }
+}
+
+.test3 {
+    @include one {
+        background-color: red;
+        font-size: 32px;
+    }
+}
+
+//제일잘쓰이는건밑에
+.test4 {
+    @include one;
+    background-color: red;
+    font-size: 32px;
+}
+
+// .test4 {
+//     width: 100px;
+//     height: 100px;
+//     color: white;
+//     background-color: red;
+//     font-size: 32px;
+//   }

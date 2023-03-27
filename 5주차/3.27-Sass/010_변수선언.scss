@@ -1,0 +1,13 @@
+.one {
+    //이렇게 안에다가 할 경우 지역변수가됨.
+    $value: red;
+    color: $value;
+    .three {
+        background-color: $value;
+    }
+
+}
+
+.two {
+    // color: $value;  얘는 에러
+}
