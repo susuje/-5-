@@ -1,0 +1,17 @@
+.one {
+    color: green;
+
+    .two {
+        color: blue;
+
+        .three{
+            color: pink;
+
+            @at-root .four{
+                color: red
+            }
+        }
+    }
+}
+
+/* 밖으로 빼내고싶을때, 근데별로사용은안함 */ 

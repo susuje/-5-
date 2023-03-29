@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.one {
+  color: green;
+}
+.one .two {
+  color: blue;
+}
+.one .two .three {
+  color: pink;
+}
+.four {
+  color: red;
+}
+
+/* 밖으로 빼내고싶을때, 근데별로사용은안함 *//*# sourceMappingURL=007_at_root.css.map */

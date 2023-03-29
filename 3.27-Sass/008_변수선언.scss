@@ -1,0 +1,20 @@
+$hojun1: #000;
+$hojun2: #0ff;
+//고유명사는 한글변수사용
+
+$호준: #f00;
+$큰글자: 34px;
+
+.one {
+    font-size: $큰글자;
+    color: $hojun2;
+}
+
+.two {
+    background-color: $hojun2;
+    color: $hojun1;
+}
+
+.three {
+    color: $호준;
+}
