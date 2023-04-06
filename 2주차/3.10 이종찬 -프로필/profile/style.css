@@ -1,0 +1,97 @@
+h1, h2, ul, p {
+    margin: initial;
+    padding: initial;
+}
+li {
+    list-style-type: none;
+}
+img {
+    vertical-align: top;
+}
+
+body {
+    background-image: url("images/background.gif");
+    background-size: cover;
+}
+
+.wrapper {
+   background-color: #ddd;
+   width: 800px;
+   margin: 40px auto;
+   text-align: center; 
+   
+   /* text-align: center;  wrapper 안에 모든  인라인을 가운데로배치, h1의 내부 (인라인) 텍스트가 가운데로 간거지 h1이 정렬된건아니다. h1은 블록요소 박스쉐도우를설정해보면 h1의 width: auto로 된걸 볼수잇다.  박스쉐도우를 inset 0 0 10px 컬러 설정하면 공간구성을 잘 볼슈이씁니다. */
+}
+
+/*div라는 타입을 셀렉해서 저 div는 타입 셀렉터라고 한다.
+   background-color: property
+   orange -value
+  
+   div는 width: auto 로 이미 셋팅되어잇다.initial value 초기값로서 디폴트값인거죵. 그래서 꽉차잇는겨.
+   background-color 의 initial value 는 transparent 입니댱.
+  
+     body 에는 기본 마진이잇다.
+      width: auto -> 직계부모가 제공해주는 content영역 (containing block)크기만큼 가득차게한다.
+
+    margin: 0 auto 로 div를 가운데로 오게한다. 사용가능한공간을 마진값으로 한다. 
+
+*/
+
+.header {
+    background-image: url(images/cover03.png);
+    padding: 50px 0;
+    background-size: cover;
+    color: white;
+}
+
+.header img.profile {
+    border: 8px solid white;
+    width: 150px;
+    border-radius: 0 40px 40px 0;
+}
+/* 
+   .header 요건 점앞에 *.header 이렇게 되어잇는거다.
+       * -> universal Selector
+       heiht: auto 는 컨텐츠의 높이  -- 컨텐츠가 많으면 자동 조절되게끔..! height: auto 가 젤 좋음.
+       height: auto means the element height will depend upon the height of its children.
+
+    블록레벨을 가운데오게하는게 margin: 0 auto; 였다.
+*/
+
+.header h1 {
+    border-bottom: 4px solid;
+    width: 200px;
+    margin: 30px auto;
+}
+
+.footer {
+    background: #f4f4f4;
+}
+
+/*이미지 밑 하단공간 마진 -vertical align: top  */
+
+
+.section {
+    background-color: white;
+    margin: 30px;
+    padding: 30px;
+    background-image: url(images/icon-information.png);
+    background-repeat: no-repeat;
+    background-position: right 40px center;
+}
+
+/*레이아웃 박스부터 만들고 컨텐츠 내용은 나중에하면된다
+section에서 마진병합이 일어낫음 - 블록끼리만 일어남,인접해있는 상하단 마진만 겹침형상이 일어남 - */
+
+.contents {
+    text-align: left;
+}
+
+.section h2 {
+   color: #ff6600;
+   margin-bottom: 20px;
+}
+
+.skills {
+    background-image: url("images/icon-skills.png");
+}

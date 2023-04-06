@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>06 Position</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                background-color: #ddd;
+            }
+            .grand-father {
+                background-color: #eee;
+                width: 800px;
+                margin: 0 auto;
+                padding: 1px;
+            }
+            .father {
+                background-color: white;
+                width: 300px;
+                height: 200px;
+                margin: 50px auto;
+            }
+            .children {
+                width: 100px;
+                height: 100px;
+                /* margin-left: -50px; */
+                /* transform: translateX(-50px); */
+                /* translate:위치를옮길거야~! */
+                /* position: relative; 뜹니다 */
+                /* position: relative; 내자리에서
+                top: 0;
+                left: -50px; */
+                /* position: absolute; 떠서 컨텐츠 뒤에숨음  */
+                position: absolute; /*앱솔루트에서 컨테이닝블록은 뷰포트,뷰포트기준.. 만약 father에게 position:relatve 주면 father가 children 의 컨테이닝블록이 됨*/
+                top: 0;
+                left: 0;   /*요세줄은 부포트맨왼쪽상단으로감 고정하려면fixed*/
+                /* position:absolute 는 자기콘튼츠만큼만차지하게됨 
+                그러다left:0 right:0 하면 땡겨져서 콘텐츠크기도 늘려진다 */
+            }
+        </style>
+	</head>
+	<body>
+
+        <div class="grand-father">
+            <div class="father">
+                <img class="children" src="img.png">sdsd
+            </div>
+        </div>
+       
+	</body>
+</html>

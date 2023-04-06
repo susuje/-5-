@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img
+    width="200px"
+    srcset="images/rabbit_500.png 500w,
+            images/rabbit_300.png 300w,
+            images/rabbit_150.png 150w"
+    src="images/rabbit_150.png"
+    alt="test">
+
+    화면이엄청작아지면 150이뜸
+    기본적으로 500이뜸.
+    브라우저에게위임을 줘서 우리가 원하는 이미지를 선택할수없다
+    width 가 없으면 이미지의 넓이가 뷰포트의 100퍼로 차지하려고함.
+
+
+
+    
+</body>
+</html>

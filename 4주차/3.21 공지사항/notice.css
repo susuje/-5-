@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+    color:inherit;
+}
+ul,li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+p,h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.notice {
+
+}
+
+.notice-title {
+
+}

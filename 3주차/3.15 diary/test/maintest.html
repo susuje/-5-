@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="maintest.css">
+    <title>메인 페이지 복습</title>
+</head>
+<body>
+    <header>
+        <div class="header-wrap">
+            <h1>
+                <a href="#"><img class="logo" src="../img/logo.svg"></a>
+            </h1>
+            <div>
+                <p class="hello">환영합니다 &nbsp;<strong class="line">정크롱</strong>님!</p>
+                <a href="#" class="btn-logout">로그아웃</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="diary-main">
+            <h2 class="heart">2023.03.17의 비밀일기</h2>
+            <form>
+                <label class="a11y-hidden" for="diary-title">제목</label>
+                <input class="input-style" type="text" placeholder="제목" id="diary-title" required>
+                <textarea class="diary-textarea" placeholder="오늘의 비밀은 무엇인가요?"></textarea>
+                <button type="submit" class="btn">작성하기</button>
+            </form>
+        </main>
+
+        <section>
+            <h2 class="a11y-hidden">일기 목록</h2>
+            <ul>
+                <li>
+                    <article class="diary-article">
+                        <h3 class="article-title">아는 청춘의 것은 그들이 운다</h3>
+                        <time class="article-time">2023.02.24 THU</time>
+                        <p class="article-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ad dicta amet ullam ea saepe, optio, ipsam molestiae quidem cum dignissimos ipsa! Inventore itaque odit id, sunt corporis facere repellat. Aliquam ad dicta amet ullam ea saepe, optio, ipsam molestiae quidem cum dignissimos ipsa! Inventore itaque odit id, sunt corporis facere repellat.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>

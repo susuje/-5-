@@ -31,23 +31,32 @@
     width: calc((100% - 48px) / 3);
     margin-right: 24px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
     
 }
+
+.texts-p {
+    flex: 1 1 auto;
+} 
 
 .card-p:last-child {
     margin-right: 0;
 }
 
-.card-p:nth-child(2) p {
-    min-height: 120px;
-}
 
 .card-p:last-child h2 {
     height: 59.2px;
+} 
+.card-cover-p {
+    width: 100%;
 }
-
 .card-cover-p img {
     border-bottom: 4px solid black;
+    width: 100%;
+    flex-shrink: 0;
+    height: 100%;
+    object-fit: cover;
 }
 
 .section-contents-p {
@@ -66,6 +75,8 @@
 .card-contents-p {
     padding: 24px 24px 0;
     color: grey;
+    /* width: 100%; */
+    /* min-width: 0; */
 }
 
 .skills a {
@@ -94,10 +105,10 @@
 .texts h2 {
     min-width: 227px;
 }
-/* 
-.texts p {
-    max-height: 180px;
-} */
+
+.card-p:nth-child(2) .texts p {
+    min-height: 120px;
+}
 
 .card-contents-p span {
     display: block;
@@ -106,7 +117,7 @@
     height: 4px;
 }
 
-.card-footer {
+.footer-contents {
     font-size: 12px;
     height: 68px;
     display: flex;
@@ -114,7 +125,7 @@
     justify-content: space-between;
 }
 
-.card-footer a {
+.footer-contents a {
     text-decoration: none;
     color: grey;
 }
@@ -142,10 +153,16 @@
 }
 
 
+.card-footer {
+    /* margin-top: auto; */
+    display: block;
+    
+}
+
 
 @media screen and (max-width: 768px) {
     .l-wrapper {
-        width: calc(100% - 100px);
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -173,6 +190,9 @@
     .card-contents-p span {
         width: 100%;
     }
+    .card-p:last-child h2 {
+        height: auto;
+    } 
 }
 
 
@@ -187,3 +207,14 @@
     }
     
 }
+
+
+
+@media (min-width: 769px) and (max-width: 1017px) {
+
+    /* .card-p:nth-child(2) p {
+        min-height: 140px;
+    } */
+    
+} 
+/* 이거 지우기. */

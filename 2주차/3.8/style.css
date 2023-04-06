@@ -1,0 +1,26 @@
+.grid-container {
+    display:grid;
+	width:300px;
+	height:300px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 2fr;
+    
+    
+}
+
+.grid-header {
+  grid-area: 헤더;
+  background: blue;
+}
+
+.grid-side-bar {
+    grid-area: 사이드;
+    background: pink;
+}
+
+.grid-container{
+	grid-template-areas: 
+		"헤더 헤더 헤더"
+		"사이드 사이드 사이드"
+		"사이드 사이드 사이드"
+}

@@ -160,11 +160,11 @@ section.select_zone {
     overflow-y: scroll;
     overflow-x: hidden; 
 }
-ul::-webkit-scrollbar {
+.money_zone ul::-webkit-scrollbar {
     width: 12px;  /* 스크롤바의 너비 */
 
 }
-ul::-webkit-scrollbar-thumb {
+.money_zone ul::-webkit-scrollbar-thumb {
     height: 80%; /* 스크롤바의 길이 */
     background-color: white; /* 스크롤바의 색상 */
     background-clip: padding-box;
@@ -270,7 +270,6 @@ div.total {
     width: 100%;
     height: 380px;
     box-sizing: border-box;
-    overflow-y: scroll;
     overflow-x: hidden; 
 }
 
@@ -315,6 +314,7 @@ div.total {
 .total ul li:nth-child(2)::after{
     content: "2"
 }
+
 
 .total img {
     height: 33px;

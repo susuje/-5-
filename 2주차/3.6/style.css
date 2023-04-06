@@ -56,3 +56,12 @@ color: #29363D;
 margin-top: 20px;
 margin-bottom: 0;
 }
+
+.mainbox {
+  /* padding: 56px 88px; */
+  display: grid;                                                /* autofit은 반응형처럼 늘어나는거 */
+  grid-template-columns: repeat(auto-fill ,minmax(288px,1fr));  /* repeat(4,1fr);/ repeat(auto-fill ,minmax(288px,1fr)); 하고 width 값을 풀어야함. */
+  gap: 32px 24px;
+  width: min(1224px, calc(100% - 60px));
+  margin:auto;
+}

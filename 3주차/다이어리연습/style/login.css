@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Pretendard-Regular';
+}
+
+body {
+    margin: 0;
+    background: #fffaf0;
+}
+
+h1, p {
+    margin: 0;
+}
+
+header {
+    background: white;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1224px;
+    max-width: calc(100% - 60px);
+    margin: auto;
+    height: 120px;
+}
+
+.logo {
+    height: 75px;
+}
+
+.btn-join {
+    display: inline-block; /* 인라인블록 한 이유는 줄바꿈안일어나게하려고 */
+    font-size: 14px;
+    text-decoration: none;
+    color:#5a6a72;
+    background: url("/img/icon-join.svg") no-repeat 0.8em center / 2em ;
+    padding: 1em 1em 1em 2.8em;
+}

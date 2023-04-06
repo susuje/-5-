@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hi</title>
+    <style>
+         /* video {
+             width: 100%; 
+            max-width: 100%;
+        }
+
+        .cont-video {
+            position: relative;
+            padding-top: 56.25%;
+             height: 56.25vw  또는 aspect-ratio: 16/9
+        }
+        .next-level {
+            position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+        } */
+
+        .full-screen-vid {
+            position: fixed;
+            /* 띄워용 */
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%);
+            min-height: 100%;
+            min-width: 100%;
+            /* height: 100%; */
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop src="nextlevel.mp4" class="full-screen-vid"></video>
+    <!-- <article class="cont-video">
+        <iframe class="next-level" width="560" height="315" src="https://www.youtube.com/embed/4TWR90KJl84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </article> -->
+</body>
+</html>

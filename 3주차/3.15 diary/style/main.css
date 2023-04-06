@@ -4,6 +4,8 @@
     font-size: 16px;
 }
 
+
+
 .diary-textarea {
     /* vertical-align: top; 블록대신 넣을수있다.  textarea가 img처럼 인라인요소라서 여백이생긴걸 잡아줌.  */
     display:block;
@@ -37,6 +39,7 @@ p,h3 {
     margin: 0;
 }
 
+/*일기목록 ---------------*/
 .diary-article {
     border-color: #677880;
     border-width: 4px 1px 1px 1px;
@@ -48,6 +51,7 @@ p,h3 {
 }
 
 
+/*음표 이미지*/
 .diary-article::before,
 .diary-article::after {
     content:"";
@@ -70,13 +74,10 @@ p,h3 {
     background: #fffaf0 url("../img/quote-end.svg") no-repeat 0 0 / contain ;
 }
 
-.article-title {
-    color: #29363d;
-    font-size: 16px;
-    float: left;
-}
 
-.article-title::before {
+
+/* 보더  밑에 얇은선 */
+.article-title::before {    
     content:"";
     display: block;
     position: absolute;
@@ -85,6 +86,13 @@ p,h3 {
     z-index: -1;
     border-top: 1px solid #677880;
     width: 100%;
+} 
+
+
+.article-title {
+    color: #29363d;
+    font-size: 16px;
+    float: left;
 }
 
 .article-time {
@@ -101,6 +109,7 @@ p,h3 {
     margin-top: 40px; 
 }
 
+/* container--------------------------------------- */
 .container {
     display: flex;
     width: 1224px;
@@ -113,14 +122,20 @@ p,h3 {
 
 
 .container main {
-    flex-shrink: 0; /*줄어들게안할거야 */
+    flex-shrink: 0; 
+    /*줄어들게안할거야 */
     flex-basis: 456px;
     border-right: 1px solid #ff4f6e;
     padding-right: 40px;
     padding-top: 56px;
-    box-sizing: border-box; /*flex-basis 에서 40px더한 이유 padding-right 에 40px먹었으니까 인듯 */
-    min-height: calc(100vh - 120px);  /*헤더 높이 뻄 스크롤생기는거막음*/
+    box-sizing: border-box; 
+    /*flex-basis 에서 40px더한 이유 padding-right 에 40px먹었으니까 인듯 */
+    min-height: calc(100vh - 120px);  
+    /* 헤더 높이 뻄 스크롤생기는거막음 */
 }
+
+
+
 
 /* 미디어 쿼리는 후자우선의 원칙으로 밑에 적어야 잘된다*/
 @media (max-width: 1024px) {
@@ -140,6 +155,8 @@ p,h3 {
     padding-top: 94px;
 }
 
+
+/* article 사이의 거리  */
 .container section ul li {
     margin-bottom: 76px;
-}
+} 

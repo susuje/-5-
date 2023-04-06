@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background-color: #ddd;
+}
+
+.header {
+    height: 300px;
+    background-image: url(images/cover.png);
+    background-position: center;
+    overflow: hidden;
+    margin-bottom: -100px;
+}
+
+.contents {
+    background-color: white;
+    width: 860px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+
+.box-wrapper {
+    overflow: hidden;
+    width: 960px;
+    margin: 50px auto;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    margin: 5px;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+    font-family: 'arial';
+    font-size: 50px;
+}
+
+.box.select {
+    background-color: orangered;
+    margin-left: -50px;
+    margin-right: -50px;
+    /* 보여지는부분은그대로지만차지하고잇는공간은0  */
+    /* position: relative; position이 static이 아닌값이들어가면 앞으로나옴. 붕뜬다. */
+}
+
+.map {
+    background-color: orange;
+    width: auto;
+    padding: 50px;
+    margin-left: -50px;
+    margin-right: -50px;
+    /* 차지하고잇는공간은 다른 p와 같지만 마진 마이너스를 통해 껍데기는 더 늘어나서 끝까지  */
+    
+
+}
+/* div는 블록먼트 엘리먼트입니다. 블록먼트 엘리먼트의 width 가 지정되지않앗다면 초기값 auto로 인해 부모가 제공해주는 컨텐츠크기의 width로 차지한다. width따로지정해줄수있따 */

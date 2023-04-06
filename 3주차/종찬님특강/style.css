@@ -1,0 +1,52 @@
+/* 덩어리를 잘 잡자 */
+
+/* wrapper 는 가운데 정렬만 한다. with 가 지정되야 마진으로 가운데정렬을하져  */
+.wrapper {
+    box-shadow: inset 0 0 10px red;
+    width: 500px;
+    margin: 100px auto;
+ /*height는 고정으로 안주는게 가장 좋다. 컨텐츠양이늘어나면자연스럽게 늘어나는게젤좋으니까. */
+}
+
+h1, p {
+    margin: initial;
+}
+
+img {
+    vertical-align: top ;
+}
+
+/* 컴포넌트 */
+body {
+    background-image: url(images/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*text-align: center은 상속됨 */
+
+.card-cover {
+    margin: 0 auto;
+    display: block;
+}
+
+.card-contents {
+    background-color: #93572e;
+    color:white;
+    padding: 20px;
+    background-image: url(images/green.png);
+    background-repeat: repeat-x;
+    padding: 64px 20px 20px 20px;
+    border-bottom: 10px solid #4a260b;
+    border-radius: 10px 10px 30px 30px;
+
+}
+
+.card-contents h1 {
+    margin-bottom: 10px;
+}
+
+.card-contents p {
+    margin: 1.2em 0;
+}

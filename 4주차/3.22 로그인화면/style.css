@@ -1,0 +1,72 @@
+* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
+
+
+
+body, h1, p {
+    margin: 0;
+}
+
+section {
+    width: 520px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px auto 18px;
+}
+
+.login {
+    padding: 26px 24px;
+    box-sizing: border-box;
+    border-top: 1px solid #C4C4C4;
+}
+
+.login h1 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.login input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #767676;
+}
+
+.login .input_id {
+    outline: 2px solid #F4492E;
+}
+.login .input_pw {
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+}
+
+.pw_text,
+.id_text {
+    color: #F4492E;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.id_text {
+    margin: 6px auto 10px;
+}
+
+.pw_text {
+    margin-top: 10px;
+}
+
+/* input 로그인 상태 유지 */

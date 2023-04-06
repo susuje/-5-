@@ -7,6 +7,9 @@
 	*/
 }
 
+* {
+    box-sizing: border-box;
+}
 
 body, h1, p, h2, h3 {
     margin: initial;
@@ -35,7 +38,7 @@ img {
 
 
 .section {
-    padding: 100px 0;
+    padding: 100px 50px;
 }
 
 .l-wrapper {

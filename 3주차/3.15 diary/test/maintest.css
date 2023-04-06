@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.a11y-hidden {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    clip-path: circle(0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+  }
+
+* {
+    font-family: 'Pretendard-Regular';
+    padding: 0;
+}
+
+body {
+    background-color:  #fffaf0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: white;
+}
+
+/*header----------------------- */
+.header-wrap {
+    width: 1440px;
+    margin: auto;
+    max-width: calc(100% - 60px); /* 반응형 */
+    height: 120px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 75px;
+}
+
+.btn-logout {
+    display: inline-block; /* 인라인블록 한 이유는 줄바꿈안일어나게하려고 */
+    font-size: 14px;
+    text-decoration: none;
+    color:#5a6a72;
+    background: url("/img/icon-logout.svg") no-repeat 0.8em center / 2em ;  
+    padding: 1em 1em 1em 2.8em;  
+}
+
+.hello {
+    display: inline-block;
+}
+
+.hello::after {
+    content: "ㅣ";
+    color: #D8DDDE;
+    margin-left: 24px;
+}
+
+.line {
+    box-shadow: inset 0 -0.6em rgba(255, 79, 110, 0.2);
+}
+
+/*-------------------header*/
+
+/* container */
+.container {
+    width: 1440px;
+    margin: auto;
+    max-width: calc(100% - 60px); 
+}
+
+
+/*-------------main*/
+
+main.diary-main {
+    width: 416px;
+    padding: 56px 40px;
+}
+
+.heart {
+    font-weight: 700;
+    font-size: 16px;
+    background: url("/img/heart.svg") no-repeat 0 center / 1.4em ; 
+    padding-left: 1.4em;
+}
+
+
+/* form */
+input, textarea, button {
+    width: 100%;
+}
+
+
+.input-style {
+    display: block;
+    box-sizing: border-box;
+    height: 48px;
+    font-size: 16px;
+    transition: box-shadow 0.2s;
+    border: none;
+    background: #FFFFFF;
+    padding: 0 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #677880;
+    border-radius: 4px 4px 0px 0px;
+    font-family: inherit;
+}
+
+.input-style:hover {
+    box-shadow: 0 2px 0 0 #2e6ff2;
+}
+.input-style:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #2e6ff2;
+    border-radius: 4px;
+}
+
+.diary-textarea {
+    height: 360px;
+    margin-bottom: 16px;
+    display:block;
+    resize: none;
+    padding: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.btn {
+    width: 100%;
+    background: #29363D;
+    border-radius: 4px;
+    display: block;
+    height: 48px;
+    border: 0;
+    /* padding: 0; */
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.black-btn:not(:disabled) {
+    cursor: pointer;
+}
+
+
+.black-btn:disabled {
+    opacity: 0.2;
+}
+/* -----------form */
+
+
+
+/* article */
+/* ul, li reset */
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+p,h3 {
+    margin: 0;
+}
+
+.diary-article {
+    border-color: #677880;
+    border-width: 4px 1px 1px 1px;
+    border-style: solid;
+    padding: 64px 48px;
+    position: relative;
+    /*수정예정*/
+    /* margin: 20px; */
+}

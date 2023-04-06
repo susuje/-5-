@@ -1,6 +1,11 @@
 * { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
 box-sizing: border-box;
 font-size: 12px;}
+
+p {
+    margin: 0;
+    margin-bottom: 16px;
+}
 .wrap{
     width: 350px;
     margin: auto;
