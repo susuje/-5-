@@ -1,0 +1,85 @@
+@import 'variables.scss';
+@import 'mixins.scss';  
+// ctrl 하고 파일명 클릭하면 돼요!! -> 파일생성됨
+
+body {font-family: 'SUIT Variable', sans-serif;}
+
+* {
+    box-sizing: border-box;
+}
+
+.a11y-hidden {
+    overflow: hidden;
+    position: absolute;
+    clip:     rect(0 0 0 0); /* IE 6,7 */
+    clip:     rect(0,0,0,0);
+    width:    1px;
+    height:   1px;
+    margin:   -1px;
+    border:   0;
+    padding:  0;
+  }
+
+.card {
+    width: min(100%,768px);
+    display: inline-block;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0, .1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    @include flex(center row);
+    @include v-prefix(radius, 20px);
+    @include v-prefix(translate, (-50%, -50%));
+
+    .cover {
+        display: block;
+        width: min(50%,120px);
+        aspect-ratio: 1/1;
+        object-fit:cover;
+        background: $gray;
+        @include v-prefix(radius, 50%);
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    .contents {
+        flex:1 0 0; // grow:1 크게늘린다 shrink: 작게줄인다 basis: 사이주
+
+        h2 {
+            @include font(title, left, $primary)
+        }
+
+        h3 {
+            @include font(sub-title, left, #666);
+            padding: 8px 0;
+        }
+
+        p {
+            @include font();
+        }
+    }
+    .skill {
+        flex:0 1 240px;
+
+        li {
+            display: inline-block;
+            background: $primary;
+            padding: 8px 12px;
+            margin: 8px 0 0;
+            @include font(desc, center, #fff);
+            @include v-prefix(radius, 40px);
+
+            &:first-child {
+                background: red;
+            }
+            i {
+                padding-right: 4px;
+            }
+        }
+    }
+}
